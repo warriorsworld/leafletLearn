@@ -18,9 +18,15 @@ export default {
         center: [32, 112],
         zoom: 8
     });
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    const lear = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(this.map);
+    });
+    lear.addTo(this.map);
+    // var a = {name: '1212', age: 12};
+    // a.addM = function () {
+    //   console.log(this);
+    // }
+    // a.addM()
   }
 }
 </script>
@@ -28,7 +34,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #mapid {
-  width: 600px;height: 300px;margin: 50px;
+  width: 500px;height: 300px;margin: 20px;
   border: 1px solid red
 }
 </style>
